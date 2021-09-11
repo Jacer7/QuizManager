@@ -13,15 +13,15 @@ public class SavingAccount extends Account {
     }
 
    public SavingAccount(double initialBalance, double initialInterestRate){
-        balance = initialBalance;
+        super(initialBalance);
         interestRate = initialInterestRate;
 
    }
 
-   // it's a rule in java that once there is empty in the .... then we need create an empty....
+    //it's a rule in java that once there is empty in the .... then we need create an empty....
    public SavingAccount(){
+        super(0);
 
    }
 
 }
-
