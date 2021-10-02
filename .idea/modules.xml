@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/QuizManager.iml" filepath="$PROJECT_DIR$/QuizManager.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JavaS2/src/areas/areas.iml" filepath="$PROJECT_DIR$/JavaS2/src/areas/areas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaDSA.iml" filepath="$PROJECT_DIR$/JavaDSA.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaS2/quiz-manager.iml" filepath="$PROJECT_DIR$/JavaS2/quiz-manager.iml" />
     </modules>
   </component>

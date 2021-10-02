@@ -1,0 +1,33 @@
+2021-09-26 07:49:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Method is only allowed for a query. Use execute or executeUpdate instead of executeQuery; SQL statement:
+DELETE FROM QUESTION WHERE TITLE = 'This is my first question1'  [90002-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.Prepared.query(Prepared.java:219)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:114)
+	at org.h2.command.Command.executeQuery(Command.java:202)
+	at org.h2.jdbc.JdbcPreparedStatement.executeQuery(JdbcPreparedStatement.java:114)
+	at TestJDBC1.deleteData(TestJDBC1.java:80)
+	at TestJDBC1.main(TestJDBC1.java:47)
+2021-09-26 11:11:42 database: wrong user or password; user: "USER"
+org.h2.message.DbException: Wrong user name or password [28000-197]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.engine.Engine.openSession(Engine.java:107)
+	at org.h2.engine.Engine.openSession(Engine.java:179)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:157)
+	at org.h2.engine.Engine.createSession(Engine.java:140)
+	at org.h2.engine.Engine.createSession(Engine.java:28)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:351)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:103)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at fr.epita.quiz.launcher.launcher.main(launcher.java:37)
+Caused by: org.h2.jdbc.JdbcSQLException: Wrong user name or password [28000-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	... 15 more
